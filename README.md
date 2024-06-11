@@ -420,11 +420,6 @@ When using a dedicated project, the `<project_id>` should follow the format `"kh
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| <a name="input_khulnasoft_aws_account_id"></a> [khulnasoft\_aws\_account\_id](#input\_khulnasoft\_aws\_account\_id) | Khulnasoft AWS Account ID | `string` | n/a | yes |
-| <a name="input_khulnasoft_bucket_name"></a> [khulnasoft\_bucket\_name](#input\_khulnasoft\_bucket\_name) | Khulnasoft Bucket Name | `string` | n/a | yes |
-| <a name="input_khulnasoft_tenant_id"></a> [khulnasoft\_tenant\_id](#input\_khulnasoft\_tenant\_id) | Khulnasoft Tenant ID | `string` | n/a | yes |
-| <a name="input_khulnasoft_volscan_api_token"></a> [khulnasoft\_volscan\_api\_token](#input\_khulnasoft\_volscan\_api\_token) | Khulnasoft Volume Scanning API Token | `string` | n/a | yes |
-| <a name="input_khulnasoft_volscan_api_url"></a> [khulnasoft\_volscan\_api\_url](#input\_khulnasoft\_volscan\_api\_url) | Khulnasoft volume scanning API URL | `string` | n/a | yes |
 | <a name="input_create_network"></a> [create\_network](#input\_create\_network) | Toggle to create network resources | `bool` | `true` | no |
 | <a name="input_create_role_name"></a> [create\_role\_name](#input\_create\_role\_name) | The name of the role to be created for Khulnasoft | `string` | `"KhulnasoftAutoConnectAgentlessRole"` | no |
 | <a name="input_cspm_role_name"></a> [cspm\_role\_name](#input\_cspm\_role\_name) | The name of the role used for CSPM | `string` | `"KhulnasoftAutoConnectCSPMRole"` | no |
@@ -432,6 +427,11 @@ When using a dedicated project, the `<project_id>` should follow the format `"kh
 | <a name="input_delete_role_name"></a> [delete\_role\_name](#input\_delete\_role\_name) | The name of the role used for deleting Khulnasoft resources | `string` | `"AutoConnectDeleteRole"` | no |
 | <a name="input_identity_pool_name"></a> [identity\_pool\_name](#input\_identity\_pool\_name) | Name of the identity pool. If not provided, the default value is set to 'khulnasoft-agentless-pool-<khulnasoft\_tenant\_id>' in the 'identity\_pool\_name' local | `string` | `null` | no |
 | <a name="input_identity_pool_provider_name"></a> [identity\_pool\_provider\_name](#input\_identity\_pool\_provider\_name) | Name of the identity pool provider. If not provided, the default value is set to 'agentless-provider-<khulnasoft\_tenant\_id>' in the 'identity\_pool\_provider\_name' local | `string` | `null` | no |
+| <a name="input_khulnasoft_aws_account_id"></a> [khulnasoft\_aws\_account\_id](#input\_khulnasoft\_aws\_account\_id) | Khulnasoft AWS Account ID | `string` | n/a | yes |
+| <a name="input_khulnasoft_bucket_name"></a> [khulnasoft\_bucket\_name](#input\_khulnasoft\_bucket\_name) | Khulnasoft Bucket Name | `string` | n/a | yes |
+| <a name="input_khulnasoft_tenant_id"></a> [khulnasoft\_tenant\_id](#input\_khulnasoft\_tenant\_id) | Khulnasoft Tenant ID | `string` | n/a | yes |
+| <a name="input_khulnasoft_volscan_api_token"></a> [khulnasoft\_volscan\_api\_token](#input\_khulnasoft\_volscan\_api\_token) | Khulnasoft Volume Scanning API Token | `string` | n/a | yes |
+| <a name="input_khulnasoft_volscan_api_url"></a> [khulnasoft\_volscan\_api\_url](#input\_khulnasoft\_volscan\_api\_url) | Khulnasoft volume scanning API URL | `string` | n/a | yes |
 | <a name="input_org_name"></a> [org\_name](#input\_org\_name) | Google Cloud Organization name | `string` | n/a | yes |
 | <a name="input_project_id"></a> [project\_id](#input\_project\_id) | Google Cloud Onboarding Project ID | `string` | n/a | yes |
 | <a name="input_region"></a> [region](#input\_region) | Google Cloud Main Deployment Region | `string` | n/a | yes |
